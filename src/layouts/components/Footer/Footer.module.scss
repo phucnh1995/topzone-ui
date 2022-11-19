@@ -1,0 +1,16 @@
+.wrapper {
+    width: 100%;
+    background: var(--background-header-footer);
+}
+.foot {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1024px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.footer__logo {
+    background-color: #222;
+    padding: 15px 15px 5px;
+    text-align: center;
+}

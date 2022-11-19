@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    background: var(--background-header-footer);
+    height: var(--default-layout-header-height);
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    max-width: 1200px;
+    height: 100%;
+    width: 100%;
+}

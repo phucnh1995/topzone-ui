@@ -3,10 +3,16 @@
 :root {
     --primary: #323232;
 
+    --background-header-footer: #101010;
     --white-color: #fff;
+
+    // Default layout
+    --default-layout-header-height: 60px;
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
