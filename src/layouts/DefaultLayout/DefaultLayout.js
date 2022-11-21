@@ -9,7 +9,7 @@ function DefaultLayout({ children }) {
     return (
         <div className={cx('wrapper')}>
             <Header />
-            <section className={cx('container')}>
+            <section style={{ height: 12000 }} className={cx('container')}>
                 <div className={cx('content')}>{children}</div>
             </section>
             <Footer />

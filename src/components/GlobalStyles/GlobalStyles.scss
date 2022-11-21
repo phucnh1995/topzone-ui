@@ -22,8 +22,27 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-rendering: optimizeSpeed;
     background: #3e3e3f;
     color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--white-color);
+}
+
+// Default Icon Topzone
+[class^='topzone-'],
+[class*='topzone-'] {
+    background-image: url(//cdn.tgdd.vn/mwgcart/topzone/images/icon-topzone.png?v=1);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 514px 226px;
 }
