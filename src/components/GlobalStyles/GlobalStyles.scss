@@ -3,6 +3,8 @@
 :root {
     --primary: #323232;
 
+    --font-family: 'Helvetica Neue', sans-serif;
+
     --background-header-footer: #101010;
     --white-color: #fff;
 
@@ -20,8 +22,51 @@ html {
     font-size: 62.5%;
 }
 
+// Fonts emnbeded
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(/assets/fonts/helvetica-neue-light.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(/assets/fonts/helveticaneuelight.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(/assets/fonts/helvetica-neue-regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(/assets/fonts/helveticaneuemedium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(/assets/fonts/helvetica-neue-medium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(/assets/fonts/helvetica-neue-bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(/assets/fonts/helveticaneuebold.woff2);
+    font-weight: 700;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-size: 1.4rem;
     text-rendering: optimizeSpeed;
     background: #3e3e3f;
