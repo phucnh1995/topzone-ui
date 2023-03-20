@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    padding-top: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    margin: 0 17px 0 0;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    display: block;
+    font-size: 1.4rem;
+    color: #222;
+    line-height: 2.1rem;
+    padding-bottom: 4px;
+}
+
+.price {
+    font-size: 1.8rem;
+    color: #222;
+    line-height: 2.3rem;
+    font-weight: bold;
+}
+
+.cost {
+    font-size: 1.5rem;
+    color: #444;
+    padding: 0 10px;
+    text-decoration-line: line-through;
+}

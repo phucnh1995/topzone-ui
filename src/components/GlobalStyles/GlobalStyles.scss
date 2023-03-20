@@ -1,5 +1,4 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 :root {
     --primary: #323232;
 
@@ -25,43 +24,43 @@ html {
 // Fonts emnbeded
 @font-face {
     font-family: Helvetica Neue;
-    src: url(/assets/fonts/helvetica-neue-light.woff2);
+    src: url(/assets/fonts/helvetica-neue-light.woff2) format('woff2');
     font-weight: 300;
 }
 
 @font-face {
     font-family: Helvetica Neue;
-    src: url(/assets/fonts/helveticaneuelight.woff2);
+    src: url(/assets/fonts/helveticaneuelight.woff2) format('woff2');
     font-weight: 300;
 }
 
 @font-face {
     font-family: Helvetica Neue;
-    src: url(/assets/fonts/helvetica-neue-regular.woff2);
+    src: url(/assets/fonts/helvetica-neue-regular.woff2) format('woff2');
     font-weight: 400;
 }
 
 @font-face {
     font-family: Helvetica Neue;
-    src: url(/assets/fonts/helveticaneuemedium.woff2);
+    src: url(/assets/fonts/helveticaneuemedium.woff2) format('woff2');
     font-weight: 500;
 }
 
 @font-face {
     font-family: Helvetica Neue;
-    src: url(/assets/fonts/helvetica-neue-medium.woff2);
+    src: url(/assets/fonts/helvetica-neue-medium.woff2) format('woff2');
     font-weight: 500;
 }
 
 @font-face {
     font-family: Helvetica Neue;
-    src: url(/assets/fonts/helvetica-neue-bold.woff2);
+    src: url(/assets/fonts/helvetica-neue-bold.woff2) format('woff2');
     font-weight: 700;
 }
 
 @font-face {
     font-family: Helvetica Neue;
-    src: url(/assets/fonts/helveticaneuebold.woff2);
+    src: url(/assets/fonts/helveticaneuebold.woff2) format('woff2');
     font-weight: 700;
 }
 
