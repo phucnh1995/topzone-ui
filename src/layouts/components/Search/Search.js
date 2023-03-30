@@ -1,14 +1,28 @@
+import { forwardRef, useImperativeHandle, useRef } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 
 import HeadlessTippy from '@tippyjs/react/headless';
 import ProductItem from '~/components/ProductItem';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
-function Search() {
+function Search(props, ref) {
+    const inputRef = useRef();
+
+    useImperativeHandle(ref, () => ({
+        focus: () => {
+            inputRef.current.focus();
+        },
+    }));
+
+    const classes = cx('search-modal', {
+        show: props.show,
+    });
+
     return (
-        <div className={cx('search-modal')}>
+        <div className={classes}>
             <div className={cx('search-modal-overlay')}></div>
             <HeadlessTippy
                 interactive
@@ -26,12 +40,14 @@ function Search() {
             >
                 <div className={cx('search-modal-body')}>
                     <i className={cx('topzone-search')}></i>
-                    <input type="text" placeholder="Tìm kiếm sản phẩm"></input>
-                    <i className={cx('topzone-delSearch')}></i>
+                    <input ref={inputRef} type="text" placeholder="Tìm kiếm sản phẩm" autoFocus />
+                    <Button className={cx('delSearch')}>
+                        <i className={cx('topzone-delSearch')}></i>
+                    </Button>
                 </div>
             </HeadlessTippy>
         </div>
     );
 }
 
-export default Search;
+export default forwardRef(Search);

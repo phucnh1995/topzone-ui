@@ -140,29 +140,15 @@
 .search-cart {
     float: right;
     position: relative;
-}
-
-.search {
-    display: inline-block;
-    vertical-align: middle;
-    background: #2f3033;
-    border-radius: 100%;
-    padding: 10px;
-    height: 40px;
-    width: 40px;
-    position: relative;
-    cursor: pointer;
-
-    &:hover {
-        background: #5e5e60;
-    }
 
     i {
         display: block;
-        margin: 2px auto;
+        margin: 1px auto;
         font-size: 1.4rem;
     }
+}
 
+.search {
     .topzone-search {
         background-position: -187px -11px;
         width: 18px;
@@ -183,12 +169,6 @@
 
     &:hover {
         background: #5e5e60;
-    }
-
-    i {
-        display: block;
-        margin: 2px auto;
-        font-size: 1.4rem;
     }
 
     .topzone-cart {

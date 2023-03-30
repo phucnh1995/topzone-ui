@@ -6,6 +6,16 @@
     bottom: 0;
     display: flex;
     justify-content: center;
+    display: none;
+}
+
+.search-modal.show {
+    display: flex;
+}
+
+.search-modal.show input {
+    padding-left: 15px;
+    opacity: 1;
 }
 
 .search-modal-overlay {
@@ -17,6 +27,7 @@
 }
 
 .search-modal-body {
+    overflow: hidden;
     position: absolute;
     width: 600px;
     height: var(--default-layout-header-height);
@@ -33,6 +44,7 @@
         background-position: -187px -11px;
         width: 18px;
         height: 18px;
+        cursor: text;
     }
 
     input {
@@ -42,6 +54,18 @@
         outline: none;
         width: 100%;
         padding-left: 85px;
+        transition: 0.65s ease-out;
+        animation-name: specialFadeInRight;
+        animation-duration: 400ms;
+        animation-fill-mode: both;
+        animation-delay: 350ms;
+    }
+
+    .delSearch {
+        margin-right: -12px;
+        margin-top: -12px;
+        border-radius: 0;
+        background-color: transparent;
     }
 
     .topzone-delSearch {
@@ -49,6 +73,17 @@
         width: 14px;
         height: 14px;
         cursor: pointer;
+    }
+}
+
+@keyframes specialFadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(10%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
     }
 }
 

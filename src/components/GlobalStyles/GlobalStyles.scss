@@ -1,6 +1,6 @@
 @import 'normalize.css';
 :root {
-    --primary: #323232;
+    --primary: #0071e3;
 
     --font-family: 'Helvetica Neue', sans-serif;
 
@@ -65,6 +65,7 @@ html {
 }
 
 body {
+    // overflow: hidden;
     font-family: var(--font-family);
     font-size: 1.4rem;
     text-rendering: optimizeSpeed;

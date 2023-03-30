@@ -1,0 +1,24 @@
+.wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    background: #2f3033;
+    border-radius: 100%;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+//Button styles
+.primary {
+    background-color: var(--primary);
+    border-radius: 12px;
+}
+
+.circle {
+    &:hover {
+        background: #5e5e60;
+    }
+}
