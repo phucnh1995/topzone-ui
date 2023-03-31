@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
@@ -10,11 +10,10 @@ const cx = classNames.bind(styles);
 
 function Header() {
     const [showSearchModal, setShowSearchModal] = useState(false);
-    const inputRef = useRef();
 
     const handleShowSearchModal = () => {
-        setShowSearchModal(true);
-        inputRef.current.focus();
+        setShowSearchModal(!showSearchModal);
+        document.body.style.overflow = 'hidden';
     };
 
     return (
@@ -64,7 +63,12 @@ function Header() {
                         <i className={cx('topzone-cart')}></i>
                     </Button>
                     {/* Search Modal*/}
-                    <Search show={showSearchModal} ref={inputRef} />
+                    <Search
+                        show={showSearchModal}
+                        close={() => {
+                            setShowSearchModal(false);
+                        }}
+                    />
                 </div>
             </div>
         </header>

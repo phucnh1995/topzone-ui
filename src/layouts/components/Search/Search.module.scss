@@ -28,7 +28,7 @@
 
 .search-modal-body {
     overflow: hidden;
-    position: absolute;
+    position: relative;
     width: 600px;
     height: var(--default-layout-header-height);
     background-color: #000;
@@ -54,11 +54,6 @@
         outline: none;
         width: 100%;
         padding-left: 85px;
-        transition: 0.65s ease-out;
-        animation-name: specialFadeInRight;
-        animation-duration: 400ms;
-        animation-fill-mode: both;
-        animation-delay: 350ms;
     }
 
     .delSearch {
@@ -73,17 +68,6 @@
         width: 14px;
         height: 14px;
         cursor: pointer;
-    }
-}
-
-@keyframes specialFadeInRight {
-    0% {
-        opacity: 0;
-        transform: translate3d(10%, 0, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
     }
 }
 
