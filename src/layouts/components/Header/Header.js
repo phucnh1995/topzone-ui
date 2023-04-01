@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
@@ -11,6 +11,8 @@ const cx = classNames.bind(styles);
 function Header() {
     const [showSearchModal, setShowSearchModal] = useState(false);
 
+    const headerRef = useRef();
+
     const handleShowSearchModal = () => {
         setShowSearchModal(!showSearchModal);
         document.body.style.overflow = 'hidden';
@@ -18,7 +20,7 @@ function Header() {
 
     return (
         <header className={cx('wrapper')}>
-            <div className={cx('inner')}>
+            <div ref={headerRef} className={cx('inner')}>
                 <div className={cx('logo')}>
                     <a href="/">
                         <i className={cx('topzone-logo')}></i>
@@ -62,15 +64,15 @@ function Header() {
                     <Button circle href="/cart" className={cx('cart')}>
                         <i className={cx('topzone-cart')}></i>
                     </Button>
-                    {/* Search Modal*/}
-                    <Search
-                        show={showSearchModal}
-                        close={() => {
-                            setShowSearchModal(false);
-                        }}
-                    />
                 </div>
             </div>
+            {/* Search Modal*/}
+            <Search
+                show={showSearchModal}
+                close={() => {
+                    setShowSearchModal(false);
+                }}
+            />
         </header>
     );
 }
