@@ -46,7 +46,7 @@ function Search({ show, close }) {
     const handleClear = () => {
         setSearchValue('');
         setSearchResult([]);
-        close();
+        close(false);
     };
 
     const handleChange = (e) => {

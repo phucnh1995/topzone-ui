@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
@@ -13,9 +13,22 @@ function Header() {
 
     const headerRef = useRef();
 
+    useEffect(() => {
+        if (showSearchModal) {
+            document.body.style.overflow = 'hidden';
+            headerRef.current.style.display = 'none';
+        } else {
+            document.body.style.overflow = 'visible';
+            headerRef.current.style.display = 'flex';
+        }
+    }, [showSearchModal]);
+
     const handleShowSearchModal = () => {
-        setShowSearchModal(!showSearchModal);
-        document.body.style.overflow = 'hidden';
+        setShowSearchModal(true);
+    };
+
+    const callbackClearSearch = (childData) => {
+        setShowSearchModal(childData);
     };
 
     return (
@@ -67,12 +80,7 @@ function Header() {
                 </div>
             </div>
             {/* Search Modal*/}
-            <Search
-                show={showSearchModal}
-                close={() => {
-                    setShowSearchModal(false);
-                }}
-            />
+            <Search show={showSearchModal} close={callbackClearSearch} />
         </header>
     );
 }
