@@ -1,6 +1,7 @@
 @import 'normalize.css';
 :root {
-    --primary: #0071e3;
+    --primary-button: #0071e3;
+    --primary-text: #2997ff;
 
     --font-family: 'Helvetica Neue', sans-serif;
 
@@ -81,7 +82,7 @@ a {
 // Default Icon Topzone
 [class^='topzone-'],
 [class*='topzone-'] {
-    background-image: url(//cdn.tgdd.vn/mwgcart/topzone/images/icon-topzone.png?v=1);
+    background-image: url('../../assets/images/icon-topzone.png');
     background-repeat: no-repeat;
     display: inline-block;
     height: 30px;
@@ -89,4 +90,26 @@ a {
     line-height: 30px;
     vertical-align: middle;
     background-size: 514px 226px;
+}
+
+[class^='iconsocial-'],
+[class*='iconsocial-'] {
+    background-image: url('../../assets/images/icon-socical.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 120px 90px;
+}
+
+[class^='iconlogo-'],
+[class*='iconlogo-'] {
+    background-image: url('../../assets/images/icon-logo.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 40px;
+    width: 133px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 425px;
 }

@@ -2,6 +2,11 @@
     width: 100%;
     background: var(--background-header-footer);
 }
+
+.color-link {
+    color: var(--primary-text) !important;
+}
+
 .foot {
     width: 100%;
     max-width: 1200px;
@@ -9,8 +14,197 @@
     margin: auto;
     padding-bottom: 10px;
 }
+
+.logo-foot {
+    display: block;
+    overflow: hidden;
+    padding: 30px 0;
+
+    .topzone-logo {
+        background-position: 0 0;
+        width: 103px;
+        height: 35px;
+    }
+
+    .topzone-apr {
+        background-image: url('../../../assets/images/APR-logo.png');
+        width: 32px;
+        height: 40px;
+        background-size: 100%;
+    }
+
+    a:first-child {
+        padding: 9px 10px 12px 0;
+        border-right: 1px solid #3b3b3b;
+        margin-right: 14px;
+    }
+}
+
+.list-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    border-bottom: 1px solid #333;
+    padding: 0 0 30px;
+}
+
+.list-foot li {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+
+    &:first-child {
+        width: 30%;
+    }
+
+    span {
+        display: block;
+        overflow: hidden;
+        color: var(--white-color);
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0 0 8px;
+        font-weight: 500;
+    }
+}
+
+.list-foot li a {
+    display: block;
+    overflow: hidden;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 0 0 10px;
+    color: #e5e5e5;
+    span {
+        display: inline-block;
+        width: 72px;
+        padding: 0;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        overflow: unset;
+    }
+
+    b {
+        font-weight: 400;
+        color: var(--primary-text);
+    }
+
+    &:hover {
+        color: var(--primary-text);
+    }
+}
+
+.social-foot {
+    p {
+        color: #888;
+        margin-bottom: 10px;
+    }
+}
+
+.social-foot .social-link {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.iconsocial-facebook {
+    background-position: -45px 0;
+    width: 33px;
+    height: 33px;
+}
+
+.iconsocial-youtube {
+    background-position: 0 0;
+    width: 33px;
+    height: 33px;
+}
+
+.iconsocial-zalo {
+    background-position: -85px 0;
+    width: 33px;
+    height: 33px;
+}
+
+.copyright-foot {
+    display: inline-block;
+    overflow: hidden;
+    padding: 22px 0;
+    max-width: 60%;
+
+    p {
+        display: block;
+        overflow: hidden;
+        font-size: 11px;
+        line-height: 14px;
+        color: #666;
+    }
+}
+
+.certify-foot {
+    display: inline-block;
+    float: right;
+    padding: 10px 0 0 10px;
+    a {
+        display: inline-block;
+        margin-left: 22px;
+        vertical-align: middle;
+    }
+}
+
 .footer__logo {
     background-color: #222;
     padding: 15px 15px 5px;
     text-align: center;
+}
+
+.footer__logo-heading {
+    color: #757575;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+.footer__logo-list {
+    font-size: 0;
+    margin-top: 15px;
+
+    li {
+        display: inline-block;
+        margin: 0 5px 10px;
+    }
+
+    .iconlogo-thegioididong {
+        background-position: -145px -100px;
+    }
+
+    .iconlogo-dienmayxanh {
+        background-position: 0 -150px;
+    }
+
+    .iconlogo-bachhoaxanh {
+        background-position: 0 -100px;
+    }
+
+    .iconlogo-ankhang {
+        background-position: -145px -284px;
+    }
+
+    .iconlogo-kids {
+        background-position: -145px -380px;
+    }
+
+    .iconlogo-sport {
+        background-position: 0 0;
+    }
+
+    .iconlogo-tantam {
+        background-position: 0 -330px;
+    }
+
+    .iconlogo-4kfarm {
+        background-position: -145px -330px;
+    }
+
+    .iconlogo-vieclam {
+        background-position: 0 -378px;
+    }
 }
