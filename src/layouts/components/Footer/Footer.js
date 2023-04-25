@@ -1,10 +1,9 @@
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 import images from '~/assets/images';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
-
-console.log(images.aprLogo);
 
 function Footer() {
     return (
@@ -93,13 +92,13 @@ function Footer() {
                 </div>
                 <div className={cx('certify-foot')}>
                     <a href="http://online.gov.vn/Home/WebDetails/88735">
-                        <img src={images.certifyBct} width={127} height={47} alt="" />
+                        <Image src={images.certifyBct} width={127} height={47} alt="" />
                     </a>
                     <a href="https://tinnhiemmang.vn/danh-ba-tin-nhiem/topzonevn-1635823490">
-                        <img src={images.handleCert} width={150} height={40} alt="" />
+                        <Image src={images.handleCert} width={150} height={40} alt="" />
                     </a>
                     <a href="https://www.dmca.com/Protection/Status.aspx?ID=4f44c8e7-b645-4ddb-8aec-c130d0598c85&refurl=https://www.topzone.vn/">
-                        <img src={images.dmcaProtected} width={135} height={32} alt="" />
+                        <Image src={images.dmcaProtected} width={135} height={32} alt="" />
                     </a>
                 </div>
             </div>
