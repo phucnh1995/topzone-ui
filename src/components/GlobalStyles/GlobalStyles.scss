@@ -1,5 +1,5 @@
 @import 'normalize.css';
-@import '~bootstrap/scss/bootstrap';
+
 :root {
     --primary-button: #0071e3;
     --primary-text: #2997ff;
@@ -11,6 +11,9 @@
 
     // Default layout
     --default-layout-header-height: 60px;
+
+    // Slider
+    --slider-nav-align-lef-right: 54px;
 }
 
 * {

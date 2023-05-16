@@ -31,6 +31,7 @@ function Search({ show, close }) {
         };
 
         fetchApi();
+        // eslint-disable-next-line
     }, [debounceValue]);
 
     useLayoutEffect(() => {
